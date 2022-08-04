@@ -1,0 +1,33 @@
+body{
+    overflow-x: hidden;
+}
+
+#musavisa-header {
+    width: 100vw;  
+    text-align: center;
+}
+#musavisa-songs {
+    width: 100vw;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.musavisa-buttons-div {
+    width: 100%;
+    text-align: center;
+}
+.musavisa-buttons-div button {
+    border-radius: 10px;
+    margin-inline: 5px;
+    height: 50px;
+
+}
+.musavisa-buttons-div .musavisa-play {
+    background-color: rgb(106, 170, 255);
+}
+.musavisa-buttons-div .musavisa-show {
+    background-color: rgb(58, 241, 83);
+}
+.musavisa-buttons-div .musavisa-pause {
+    background-color: rgb(241, 62, 62);
+}
