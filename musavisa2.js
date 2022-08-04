@@ -1,14 +1,15 @@
-const audio1 = new Audio("Musavisa1/MikkoHarju.mp3")
-const audio2 = new Audio("Musavisa1/JKarjalainen.mp3")
-const audio3 = new Audio("Musavisa1/JohannaKurkela.mp3")
-const audio4 = new Audio("Musavisa1/JVG.mp3")
-const audio5 = new Audio("Musavisa1/KaijaKoo.mp3")
-const audio6 = new Audio("Musavisa1/LauraNarhi.mp3")
-const audio7 = new Audio("Musavisa1/MikaelGabriel.mp3")
-const audio8 = new Audio("Musavisa1/ZenCafe.mp3")
-const audio9 = new Audio("Musavisa1/OlliHalonen.mp3")
-const audio10 = new Audio("Musavisa1/Pyhimys.mp3")
-const bonusAudio = new Audio("Musavisa1/BonusBiisi.mp3")
+const audio1 = new Audio("Musavisa2/AnssiKela1972.mp3")
+const audio2 = new Audio("Musavisa2/Faija.mp3")
+const audio3 = new Audio("Musavisa2/XTC.mp3")
+const audio4 = new Audio("Musavisa2/KaunisRietasOnnellinen.mp3")
+const audio5 = new Audio("Musavisa2/SurullinenKlovni.mp3")
+const audio6 = new Audio("Musavisa2/NeitiKesäheinä.mp3")
+const audio7 = new Audio("Musavisa2/MaailmaOnSun.mp3")
+const audio8 = new Audio("Musavisa2/KesäYö.mp3")
+const audio9 = new Audio("Musavisa2/LevotonTuhkimo.mp3")
+const audio10 = new Audio("Musavisa2/HetkenTäsKaikesOnJärkee.mp3")
+const audio11 = new Audio("Musavisa2/LokinPäälläLokki.mp3")
+const bonusAudio = new Audio("Musavisa2/BonusBiisi.mp3")
 
 const rightAnswer1 = document.getElementById("rightAnswer1")
 const rightAnswer2 = document.getElementById("rightAnswer2")
@@ -20,6 +21,7 @@ const rightAnswer7 = document.getElementById("rightAnswer7")
 const rightAnswer8 = document.getElementById("rightAnswer8")
 const rightAnswer9 = document.getElementById("rightAnswer9")
 const rightAnswer10 = document.getElementById("rightAnswer10")
+const rightAnswer11 = document.getElementById("rightAnswer11")
 const rightAnswerBonus = document.getElementById("rightAnswerBonus")
 
 const playAudio1 = () => {
@@ -52,6 +54,9 @@ const playAudio9 = () => {
 const playAudio10 = () => {
     audio10.play();
 }
+const playAudio11 = () => {
+    audio11.play();
+}
 const playBonus = () => {
     bonusAudio.play();
 }
@@ -62,37 +67,40 @@ const stopBonus = () => {
 
 
 const showAnswer1 = () => {
-    rightAnswer1.textContent = "1. Mikko Harju - Mä olen tässä"
+    rightAnswer1.textContent = "1. Anssi Kela - 1972"
 }
 const showAnswer2 = () => {
-    rightAnswer2.textContent = "2. J. Karjalainen - Mennyt mies"
+    rightAnswer2.textContent = "2. JVG, Nopsajalka - Faija"
 }
 const showAnswer3 = () => {
-    rightAnswer3.textContent = "3. Johanna Kurkela - Oothan tässä vielä huomenna"
+    rightAnswer3.textContent = "3. Lukas Leon, Cheek, Etta - XTC"
 }
 const showAnswer4 = () => {
-    rightAnswer4.textContent = "4. JVG - Vamos"
+    rightAnswer4.textContent = "4. Kaija Koo - Kaunis Rietas Onnellinen"
 }
 const showAnswer5 = () => {
-    rightAnswer5.textContent = "5. Kaija Koo - Vapaa"
+    rightAnswer5.textContent = "5. MKDMSK, Pyhimys - Surullinen Klovni"
 }
 const showAnswer6 = () => {
-    rightAnswer6.textContent = "6. Laura Närhi - Supersankari"
+    rightAnswer6.textContent = "6. Intiaanikesä - Neiti Kesäheinä"
 }
 const showAnswer7 = () => {
-    rightAnswer7.textContent = "7. Mikael Gabriel - Nallekarkit"
+    rightAnswer7.textContent = "7. Tehosekoitin - Maailma On Sun"
 }
 const showAnswer8 = () => {
-    rightAnswer8.textContent = "8. Zen Cafe - Todella kaunis"
+    rightAnswer8.textContent = "8. Pariisin Kevät - Kesäyö"
 }
 const showAnswer9 = () => {
-    rightAnswer9.textContent = "9. Olli Halonen - Pohjola"
+    rightAnswer9.textContent = "9. Dingo - Levoton Tuhkimo"
 }
 const showAnswer10 = () => {
-    rightAnswer10.textContent = "10. Pyhimys - v!@%#mikko (Vittumikko)"
+    rightAnswer10.textContent = "10. Elastinen, Johanna Kurkela - Hetken tässä kaikes on järkee"
+}
+const showAnswer11 = () => {
+    rightAnswer11.textContent = "11. Apulanta - Lokin päällä lokki"
 }
 const showBonusAnswer = () => {
-    rightAnswerBonus.textContent = "Bonus: Anna Erikkson - Kaikista kasvoista"
+    rightAnswerBonus.textContent = "Bonus: Eppu Normaali - Baarikärpänen"
 }
 
 
