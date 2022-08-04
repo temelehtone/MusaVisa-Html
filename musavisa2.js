@@ -1,14 +1,14 @@
-const audio1 = new Audio("Audio/MikkoHarju.mp3")
-const audio2 = new Audio("Audio/JKarjalainen.mp3")
-const audio3 = new Audio("Audio/JohannaKurkela.mp3")
-const audio4 = new Audio("Audio/JVG.mp3")
-const audio5 = new Audio("Audio/KaijaKoo.mp3")
-const audio6 = new Audio("Audio/LauraNarhi.mp3")
-const audio7 = new Audio("Audio/MikaelGabriel.mp3")
-const audio8 = new Audio("Audio/ZenCafe.mp3")
-const audio9 = new Audio("Audio/OlliHalonen.mp3")
-const audio10 = new Audio("Audio/Pyhimys.mp3")
-const bonusAudio = new Audio("Audio/BonusBiisi.mp3")
+const audio1 = new Audio("Musavisa1/MikkoHarju.mp3")
+const audio2 = new Audio("Musavisa1/JKarjalainen.mp3")
+const audio3 = new Audio("Musavisa1/JohannaKurkela.mp3")
+const audio4 = new Audio("Musavisa1/JVG.mp3")
+const audio5 = new Audio("Musavisa1/KaijaKoo.mp3")
+const audio6 = new Audio("Musavisa1/LauraNarhi.mp3")
+const audio7 = new Audio("Musavisa1/MikaelGabriel.mp3")
+const audio8 = new Audio("Musavisa1/ZenCafe.mp3")
+const audio9 = new Audio("Musavisa1/OlliHalonen.mp3")
+const audio10 = new Audio("Musavisa1/Pyhimys.mp3")
+const bonusAudio = new Audio("Musavisa1/BonusBiisi.mp3")
 
 const rightAnswer1 = document.getElementById("rightAnswer1")
 const rightAnswer2 = document.getElementById("rightAnswer2")
@@ -94,3 +94,13 @@ const showAnswer10 = () => {
 const showBonusAnswer = () => {
     rightAnswerBonus.textContent = "Bonus: Anna Erikkson - Kaikista kasvoista"
 }
+
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
