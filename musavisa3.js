@@ -68,7 +68,7 @@ function addElement(obj, i) {
                         <button onclick="playAudio('${obj.fn}')" class="musavisa-play">PLAY ${name}</button>
                         <button onclick="showAnswer('${obj.answer}', ${i})" class="musavisa-show">SHOW ANSWER ${name}</button>
                         <button onclick="hideAnswer(${i})" class="musavisa-hide">HIDE ANSWER ${name}</button>
-                        <h3 class="musavisa-right-answer-text" style="color: white;" id="rightAnswer${i}"></h3>
+                        <h3 class="musavisa-right-answer-text" id="rightAnswer${i}"></h3>
                     </div>`
     $(wrapper).appendTo($("#musavisa-songs"))
 }

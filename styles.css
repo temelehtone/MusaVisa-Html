@@ -8,6 +8,7 @@ body{
 #musavisa-header {
     width: 100vw;  
     text-align: center;
+    color: white;
 }
 #musavisa-songs {
     width: 100vw;  
@@ -45,7 +46,9 @@ body{
   background-color: rgb(75 75 75);
   color: white;
 }
-
+.musavisa-right-answer-text {
+  color: white;
+}
   
   .topnav {
     overflow: hidden;
