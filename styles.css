@@ -2,6 +2,7 @@ body{
     overflow-x: hidden;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background: #1e1f27;
 }
 
 #musavisa-header {
@@ -15,23 +16,34 @@ body{
     align-items: center;
 }
 .musavisa-buttons-div {
-    width: 100%;
+    width: 480px;
     text-align: center;
+    margin-bottom: 5px;
+    max-width: 100%;
 }
 .musavisa-buttons-div button {
-    border-radius: 10px;
+    border-radius: 5px;
     margin-inline: 5px;
     height: 50px;
-
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 .musavisa-buttons-div .musavisa-play {
-    background-color: rgb(106, 170, 255);
+    background-color: rgb(24 105 213);
+    color: white;
 }
 .musavisa-buttons-div .musavisa-show {
-    background-color: rgb(58, 241, 83);
+    background-color: rgb(49 135 63);
+    color: white;
 }
 .musavisa-buttons-div .musavisa-pause {
-    background-color: rgb(241, 62, 62);
+    background-color: rgb(255 164 164);
+}
+
+.musavisa-buttons-div .musavisa-hide {
+  background-color: rgb(75 75 75);
+  color: white;
 }
 
   

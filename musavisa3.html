@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Musavisa</title>
 </head>
 <body>
@@ -18,16 +19,18 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
+    <section id="musavisa-header">
+        <h1 style="color: white;">MUSAVISA 3</h1>
+    </section>
+    <section id="musavisa-songs">
+       
+        <div class="musavisa-buttons-div">
+            <button onclick="stopAudio()" class="musavisa-pause">PAUSE SONG</button>
+        </div>
+    </section>
 
-      <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
+    <script src="musavisa3.js">
+        
+    </script>
 </body>
 </html>
