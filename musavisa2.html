@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Musavisa</title>
 </head>
@@ -14,8 +14,9 @@
         <a href="./musavisa1.html">Musavisa 1</a>
         <a href="./musavisa2.html">Musavisa 2</a>
         <a href="./musavisa3.html">Musavisa 3</a>
+        <a href="./musavisa4.html">Musavisa 4 (Saima)</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </a>
       </div>
     <section id="musavisa-header">
@@ -24,63 +25,87 @@
     <section id="musavisa-songs">
         <div class="musavisa-buttons-div">
             <button onclick="playAudio1()" class="musavisa-play">PLAY1</button>
-            <button onclick="showAnswer1()" class="musavisa-show">SHOW ANSWER 1</button>
+            <button onclick="toggleAnswer(1)" class="musavisa-toggle" id="toggleBtn1">
+                <i class="fas fa-eye"></i> SHOW ANSWER 1
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer1"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio2()" class="musavisa-play">PLAY2</button>
-            <button onclick="showAnswer2()" class="musavisa-show">SHOW ANSWER 2</button>
+            <button onclick="toggleAnswer(2)" class="musavisa-toggle" id="toggleBtn2">
+                <i class="fas fa-eye"></i> SHOW ANSWER 2
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer2"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio3()" class="musavisa-play">PLAY3</button>
-            <button onclick="showAnswer3()" class="musavisa-show">SHOW ANSWER 3</button>
+            <button onclick="toggleAnswer(3)" class="musavisa-toggle" id="toggleBtn3">
+                <i class="fas fa-eye"></i> SHOW ANSWER 3
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer3"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio4()" class="musavisa-play">PLAY4</button>
-            <button onclick="showAnswer4()" class="musavisa-show">SHOW ANSWER 4</button>
+            <button onclick="toggleAnswer(4)" class="musavisa-toggle" id="toggleBtn4">
+                <i class="fas fa-eye"></i> SHOW ANSWER 4
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer4"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio5()" class="musavisa-play">PLAY5</button>
-            <button onclick="showAnswer5()" class="musavisa-show">SHOW ANSWER 5</button>
+            <button onclick="toggleAnswer(5)" class="musavisa-toggle" id="toggleBtn5">
+                <i class="fas fa-eye"></i> SHOW ANSWER 5
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer5"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio6()" class="musavisa-play">PLAY6</button>
-            <button onclick="showAnswer6()" class="musavisa-show">SHOW ANSWER 6</button>
+            <button onclick="toggleAnswer(6)" class="musavisa-toggle" id="toggleBtn6">
+                <i class="fas fa-eye"></i> SHOW ANSWER 6
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer6"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio7()" class="musavisa-play">PLAY7</button>
-            <button onclick="showAnswer7()" class="musavisa-show">SHOW ANSWER 7</button>
+            <button onclick="toggleAnswer(7)" class="musavisa-toggle" id="toggleBtn7">
+                <i class="fas fa-eye"></i> SHOW ANSWER 7
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer7"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio8()" class="musavisa-play">PLAY8</button>
-            <button onclick="showAnswer8()" class="musavisa-show">SHOW ANSWER 8</button>
+            <button onclick="toggleAnswer(8)" class="musavisa-toggle" id="toggleBtn8">
+                <i class="fas fa-eye"></i> SHOW ANSWER 8
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer8"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio9()" class="musavisa-play">PLAY9</button>
-            <button onclick="showAnswer9()" class="musavisa-show">SHOW ANSWER 9</button>
+            <button onclick="toggleAnswer(9)" class="musavisa-toggle" id="toggleBtn9">
+                <i class="fas fa-eye"></i> SHOW ANSWER 9
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer9"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio10()" class="musavisa-play">PLAY10</button>
-            <button onclick="showAnswer10()" class="musavisa-show">SHOW ANSWER 10</button>
+            <button onclick="toggleAnswer(10)" class="musavisa-toggle" id="toggleBtn10">
+                <i class="fas fa-eye"></i> SHOW ANSWER 10
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer10"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playAudio11()" class="musavisa-play">PLAY11</button>
-            <button onclick="showAnswer11()" class="musavisa-show">SHOW ANSWER 11</button>
+            <button onclick="toggleAnswer(11)" class="musavisa-toggle" id="toggleBtn11">
+                <i class="fas fa-eye"></i> SHOW ANSWER 11
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswer11"></h3>
         </div>
         <div class="musavisa-buttons-div">
             <button onclick="playBonus()" class="musavisa-play">PLAY BONUS</button>
             <button onclick="stopBonus()" class="musavisa-pause">PAUSE BONUS</button>
-            <button onclick="showBonusAnswer()" class="musavisa-show">SHOW BONUS ANSWER</button>
+            <button onclick="toggleAnswer('bonus')" class="musavisa-toggle" id="toggleBtnBonus">
+                <i class="fas fa-eye"></i> SHOW BONUS ANSWER
+            </button>
             <h3 class="musavisa-right-answer-text" id="rightAnswerBonus"></h3>
         </div>
     </section>

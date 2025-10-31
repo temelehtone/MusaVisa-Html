@@ -103,6 +103,49 @@ const showBonusAnswer = () => {
     rightAnswerBonus.textContent = "Bonus: Eppu Normaali - Baarikärpänen"
 }
 
+// New toggle functionality
+const answers = {
+    1: "1. Anssi Kela - 1972",
+    2: "2. JVG, Nopsajalka - Faija",
+    3: "3. Lukas Leon, Cheek, Etta - XTC",
+    4: "4. Kaija Koo - Kaunis Rietas Onnellinen",
+    5: "5. MKDMSK, Pyhimys - Surullinen Klovni",
+    6: "6. Intiaanikesä - Neiti Kesäheinä",
+    7: "7. Tehosekoitin - Maailma On Sun",
+    8: "8. Pariisin Kevät - Kesäyö",
+    9: "9. Dingo - Levoton Tuhkimo",
+    10: "10. Elastinen, Johanna Kurkela - Hetken tässä kaikes on järkee",
+    11: "11. Apulanta - Lokin päällä lokki",
+    bonus: "Bonus: Eppu Normaali - Baarikärpänen"
+};
+
+const answerStates = {};
+
+function toggleAnswer(id) {
+    const isShown = answerStates[id] || false;
+    const answerId = id === 'bonus' ? 'rightAnswerBonus' : `rightAnswer${id}`;
+    const btnId = id === 'bonus' ? 'toggleBtnBonus' : `toggleBtn${id}`;
+    const answerElement = document.getElementById(answerId);
+    const buttonElement = document.getElementById(btnId);
+    const iconElement = buttonElement.querySelector('i');
+    
+    if (isShown) {
+        // Hide answer
+        answerElement.textContent = "";
+        buttonElement.classList.remove('hidden');
+        iconElement.className = "fas fa-eye";
+        buttonElement.innerHTML = `<i class="fas fa-eye"></i> SHOW ANSWER ${id === 'bonus' ? 'BONUS' : id}`;
+        answerStates[id] = false;
+    } else {
+        // Show answer
+        answerElement.textContent = answers[id];
+        buttonElement.classList.add('hidden');
+        iconElement.className = "fas fa-eye-slash";
+        buttonElement.innerHTML = `<i class="fas fa-eye-slash"></i> HIDE ANSWER ${id === 'bonus' ? 'BONUS' : id}`;
+        answerStates[id] = true;
+    }
+}
+
 
 function myFunction() {
     var x = document.getElementById("myTopnav");

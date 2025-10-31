@@ -95,6 +95,48 @@ const showBonusAnswer = () => {
     rightAnswerBonus.textContent = "Bonus: Anna Erikkson - Kaikista kasvoista"
 }
 
+// New toggle functionality
+const answers = {
+    1: "1. Mikko Harju - Mä olen tässä",
+    2: "2. J. Karjalainen - Mennyt mies",
+    3: "3. Johanna Kurkela - Oothan tässä vielä huomenna",
+    4: "4. JVG - Vamos",
+    5: "5. Kaija Koo - Vapaa",
+    6: "6. Laura Närhi - Supersankari",
+    7: "7. Mikael Gabriel - Nallekarkit",
+    8: "8. Zen Cafe - Todella kaunis",
+    9: "9. Olli Halonen - Pohjola",
+    10: "10. Pyhimys - v!@%#mikko (Vittumikko)",
+    bonus: "Bonus: Anna Erikkson - Kaikista kasvoista"
+};
+
+const answerStates = {};
+
+function toggleAnswer(id) {
+    const isShown = answerStates[id] || false;
+    const answerId = id === 'bonus' ? 'rightAnswerBonus' : `rightAnswer${id}`;
+    const btnId = id === 'bonus' ? 'toggleBtnBonus' : `toggleBtn${id}`;
+    const answerElement = document.getElementById(answerId);
+    const buttonElement = document.getElementById(btnId);
+    const iconElement = buttonElement.querySelector('i');
+    
+    if (isShown) {
+        // Hide answer
+        answerElement.textContent = "";
+        buttonElement.classList.remove('hidden');
+        iconElement.className = "fas fa-eye";
+        buttonElement.innerHTML = `<i class="fas fa-eye"></i> SHOW ANSWER ${id === 'bonus' ? 'BONUS' : id}`;
+        answerStates[id] = false;
+    } else {
+        // Show answer
+        answerElement.textContent = answers[id];
+        buttonElement.classList.add('hidden');
+        iconElement.className = "fas fa-eye-slash";
+        buttonElement.innerHTML = `<i class="fas fa-eye-slash"></i> HIDE ANSWER ${id === 'bonus' ? 'BONUS' : id}`;
+        answerStates[id] = true;
+    }
+}
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

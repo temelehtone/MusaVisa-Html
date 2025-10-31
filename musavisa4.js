@@ -1,54 +1,44 @@
-const defaultFolder = "Musavisa3/"
+const defaultFolder = "Musavisa4/"
 const mimeType = ".mp3";
 
 let currAudio;
 
-
 const audioObjects = [
     {
-        fn: "satasen_laina",
-        answer: "Nylon Beat - Satasen laina"
+        fn: "bonnie_holding_out",
+        answer: "Holding Out for a Hero - Bonnie Tyler"
     },
     {
-        fn: "timantit_on_ikuisia",
-        answer: "Cheek - Timantit on ikuisia"
+        fn: "britney_baby_one_more",
+        answer: "Baby One More Time - Britney Spears"
     },
     {
-        fn: "rafaelin_enkeli",
-        answer: "Pekka Ruuska - Rafaelin enkeli"
+        fn: "frederik_volga",
+        answer: "Volga - Frederik"
     },
     {
-        fn: "elaman_nalka",
-        answer: "Elämän nälkä - Pave Maijanen"
+        fn: "indica_ikuinen",
+        answer: "Ikuinen Virta - Indica"
     },
     {
-        fn: "saannot_rakkaudelle",
-        answer: "Anna Puu - Säännöt rakkaudelle"
+        fn: "irwin_harmalainen",
+        answer: "Härmäläinen perusjuntti - Irwin Goodman"
     },
     {
-        fn: "esson_baariin",
-        answer: "Esson baariin - Poju"
+        fn: "maustetytot_taksilla",
+        answer: "Taksilla Vaalaan - Maustetytöt"
     },
     {
-        fn: "viimeinen_tanssi",
-        answer: "BEHM, Olavi Uusivirta - Viimeinen tanssi"
+        fn: "tauski_sina",
+        answer: "Sinä vain - Tauski"
     },
     {
-        fn: "armo",
-        answer: "Apulanta - Armo"
+        fn: "teflon_maradona",
+        answer: "Maradona 86 - Teflon Brothers"
     },
     {
-        fn: "puistossa",
-        answer: "Anssi Kela - Puistossa"
-    },
-    {
-        fn: "juodaan_viinaa",
-        answer: "Hector - Juodaan viinaa"
-    },
-    {
-        fn: "sata_kesaa",
-        answer: "Paula Koivuniemi - Sata kesää, tuhat yötä",
-        isBonus: true
+        fn: "yankee_gasolina",
+        answer: "Gasolina - Daddy Yankee"
     },
 ]
 
